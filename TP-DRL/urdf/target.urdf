@@ -1,0 +1,23 @@
+<robot name="target">
+
+  <material name="green">
+    <color rgba="0. 0.8 0. .8"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0. 0. 0." rpy="0. 0. 0." />
+      <geometry>  
+        <sphere radius="0.02"/>
+      </geometry>
+      <material name="green" />
+    </visual>
+
+    <inertial>
+        <origin xyz="0. 0. 0." rpy="0. 0. 0." />
+        <inertia ixz="0.0" ixy="0.0" iyz="0.0" ixx="1.e-6" izz="1.e-6"  iyy="1.e-6" />
+        <mass value="1.0e-3" />
+    </inertial>
+  </link>
+
+</robot>
