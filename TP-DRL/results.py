@@ -24,7 +24,7 @@ if __name__ == "__main__":
             break
         except:
             print("Please, enter a valid number")
-    model_dir = os.listdir('models/')[model_number-1]
+    model_dir = list([d for d in os.listdir('models/') if d.startswith('2DOF')])[model_number-1]
     ###
 
     for directory in [d for d in os.listdir('models/') if d.startswith('2DOF')]:
